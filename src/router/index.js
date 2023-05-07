@@ -1,7 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+// 基本功能
 import Home from '../components/views/Home.vue';
 import UserInfo from '../components/views/UserInfo.vue';
+import Login from '../components/views/Login.vue';
+import Register from '../components/views/Register.vue'
+
 // seat信息
 import GetSeat from '../components/seatsfunc/GetSeat.vue';
 import ManageSeats from '../components/seatsfunc/ManageSeats.vue';
@@ -17,6 +21,8 @@ import EditBook from '../components/booksfunc/EditBook.vue';
 const routes = [
   { path: '/', name: 'home', component: Home },
   { path: '/userinfo', name: 'userinfo', component: UserInfo },
+  { path: '/login', name: 'login', component: Login },
+  { path: '/register', name: 'register', component: Register },
   // seats操作
   { path: '/getseat', name: 'getseat', component: GetSeat },
   { path: '/manageseats', name: 'manageseats', component: ManageSeats },
